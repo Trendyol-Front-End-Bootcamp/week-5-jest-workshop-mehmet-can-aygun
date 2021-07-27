@@ -12,6 +12,17 @@ describe("Pascal Case", () => {
     expect(returnedTitle).toBe("Hello I Am Mehmet Can");
   });
 
+  it("should return an empty string if given string is empty", () => {
+    // arrange
+    const title = "";
+
+    // act
+    const returnedTitle = toPascal(title);
+
+    //assert
+    expect(returnedTitle).toBe("");
+  });
+
   it("should not make pascal case when word is 'and' and 'or'", () => {
     // arrange
     const title = "to be or not to be";

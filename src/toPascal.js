@@ -1,4 +1,6 @@
 export const toPascal = (title) => {
+  if (title === "") return "";
+
   return title
     .split(" ")
     .map((word) => {
